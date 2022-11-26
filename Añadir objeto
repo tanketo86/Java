@@ -1,0 +1,26 @@
+public class Main {
+    public static void main(String[] args) {
+        
+    // Añadir objeto y quitarle una propiedad    
+
+    Coche miCoche = new Coche();
+    miCoche.quitarPuerta();
+    miCoche.quitarRueda();
+    System.out.println(miCoche.puertas);
+    System.out.println(miCoche.ruedas);
+
+    }
+}
+
+class Coche {
+
+    int puertas = 5;
+    int ruedas = 4;
+
+    public void quitarRueda(){
+        this.ruedas--;
+    }
+    public void quitarPuerta(){
+        this.puertas--;
+    }
+}
